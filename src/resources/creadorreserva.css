@@ -1,0 +1,41 @@
+.root{
+    -fx-background-color: white;
+}
+.mainBar {
+  -fx-background-color: linear-gradient(to right, #0F7520, #006400);
+}
+.menuHorizontal{
+    -fx-border-color:linear-gradient(to right, #0F7520, #006400);
+    -fx-border-width: 3px;
+    -fx-background-color:white;
+}
+.plainText{
+    -fx-font: bold italic 14pt "System";
+    -fx-text-fill: linear-gradient(to right, #0F7520, #006400);
+}
+.plainTextPista{
+    -fx-font: bold italic 18pt "System";
+    -fx-text-fill: linear-gradient(to right, #0F7520, #006400);
+}
+.gridText{
+    -fx-font: bold italic 11pt "System";
+    -fx-text-fill: linear-gradient(to right, #0F7520, #006400);
+}
+.botonAceptar{
+  -fx-background-color: white;
+  -fx-background-radius: 50;
+  -fx-border-color: linear-gradient(to right, #00FF00, #006400);
+  -fx-border-radius: 50;
+  -fx-border-width: 2px;
+  -fx-font: bold italic 14pt "System";
+  -fx-text-fill: linear-gradient(to right, #0F7520, #006400);
+}
+.botonAceptar:hover {
+  -fx-background-color: linear-gradient(to bottom right, #0F7520, #006400);
+  -fx-text-fill: white;
+}
+
+.grid-line {
+    -fx-border-color: linear-gradient(to bottom right, #0F7520, #006400);
+    -fx-border-width:3px;
+}

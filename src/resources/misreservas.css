@@ -1,0 +1,74 @@
+.mainBar {
+  -fx-background-color: linear-gradient(to right, #0F7520, #006400);
+}
+.txtField{
+    -fx-text-fill:white;
+      -fx-font-size: 30px;
+  -fx-font-weight: bold;
+}
+.custom-button {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 10;
+    -fx-padding: 5 10;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.custom-button:hover {
+    -fx-underline: true;
+    -fx-background-color: white;
+    -fx-text-fill: green;
+    -fx-border-radius: 10;
+}
+.plainText{
+    -fx-font: bold italic 12pt "System";
+    -fx-text-fill: #006400;
+}
+.plainText2{
+    -fx-font: bold 10pt "System";
+   -fx-text-fill: black;
+}
+.botonCancelar {
+  -fx-background-color: white;
+  -fx-background-radius: 50;
+  -fx-border-color: linear-gradient(to right, #FF0000, #8B0000);
+  -fx-border-radius: 50;
+  -fx-border-width: 2px;
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+}
+.botonCancelar:hover {
+  -fx-background-color: linear-gradient(to bottom right, #B22222, #8B0000);
+  -fx-text-fill: white;
+}
+.botonLocation {
+  -fx-background-color: white;
+  -fx-background-radius: 50;
+  -fx-border-color: linear-gradient(to right, #0000FF, #00008B);
+  -fx-border-radius: 50;
+  -fx-border-width: 2px;
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+}
+
+.botonLocation:hover {
+  -fx-background-color: linear-gradient(to bottom right, #1862c9, #00008B);
+  -fx-text-fill: white;
+}
+.root{
+    -fx-background-color:white;
+}
+.botonAceptar{
+    -fx-background-color: white;
+    -fx-background-radius: 50;
+    -fx-border-color: linear-gradient(to right, #00FF00, #006400);
+    -fx-border-radius: 50;
+    -fx-border-width: 2px;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+.botonAceptar:hover {
+    -fx-background-color: linear-gradient(to bottom right, #0F7520, #006400);
+    -fx-text-fill: white;
+}

@@ -1,0 +1,15 @@
+/*
+* @author Alejandro Iserte, Jordi Puig y Jeroni Altur
+*/
+.root{
+    -fx-background-color:white;
+}
+
+
+
+.foto-background{
+    -fx-background-color:white;
+}
+.foto-background:pressed{
+    -fx-background-color:#3065c7;
+}

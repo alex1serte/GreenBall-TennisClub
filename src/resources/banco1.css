@@ -1,0 +1,27 @@
+.root{
+    -fx-backgroud-color:white;
+}
+.cajaDeArriba{
+    -fx-border-color:black;
+}
+
+.colorBasico{
+    -fx-background-color:#009ada;
+}
+.colorPrimario{
+    -fx-backgroud-color:#e65a2b;
+}
+.colorSecundario{
+    -fx-background-color:yellow;
+}
+.botonAceptar{
+    -fx-background-color: white;
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-border-width: 2px;
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+.botonAceptar:hover{
+   -fx-underline: true;
+}

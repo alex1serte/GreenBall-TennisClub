@@ -1,0 +1,31 @@
+.root{
+    -fx-background-color:white;
+}
+.success-text-big{
+  -fx-font-size: 50px;
+  -fx-font-weight: bold;
+  -fx-text-fill: linear-gradient(to right, #00FF00, #006400);
+    -fx-padding: 5px; /* Espacio interno del texto */
+    -fx-stroke:#0F7520;
+}
+.mainBar {
+  -fx-background-color:linear-gradient(to right, #0F7520, #006400);
+   -fx-font-size: 20px;
+  -fx-font-weight: bold;
+}
+.subtitle{
+    -fx-text-fill: #006400;
+}
+.botonAceptar{
+  -fx-background-color: white;
+  -fx-background-radius: 50;
+  -fx-border-color: linear-gradient(to right, #00FF00, #006400);
+  -fx-border-radius: 50;
+  -fx-border-width: 2px;
+  -fx-font-size: 12px;
+  -fx-font-weight: bold;
+}
+.botonAceptar:hover {
+  -fx-background-color: linear-gradient(to bottom right, #0F7520, #006400);
+  -fx-text-fill: white;
+}

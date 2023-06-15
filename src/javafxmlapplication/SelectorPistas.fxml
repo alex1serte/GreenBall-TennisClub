@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="967.0" styleClass="root" stylesheets="@../resources/selectorpistas.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.SelectorPistasController">
+   <bottom>
+      <ButtonBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="58.0" prefWidth="951.0" BorderPane.alignment="TOP_RIGHT">
+        <buttons>
+          <Button fx:id="backButton" mnemonicParsing="false" onMousePressed="#cerrarVentanaActual" prefHeight="33.0" prefWidth="128.0" styleClass="botonCancelar" stylesheets="@../resources/selectorpistas.css" text="Volver atrás" translateX="-12.0">
+               <padding>
+                  <Insets right="4.0" />
+               </padding>
+            </Button>
+        </buttons>
+      </ButtonBar>
+   </bottom>
+   <center>
+      <HBox alignment="BOTTOM_CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane depthTest="DISABLE" prefHeight="384.0" prefWidth="921.0" snapToPixel="false" styleClass="root" stylesheets="@../resources/selectorpistas.css" HBox.hgrow="NEVER">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#236827" height="347.0" layoutX="77.0" layoutY="20.0" stroke="RED" strokeType="INSIDE" width="839.0" x="-7.0" AnchorPane.leftAnchor="70.0" AnchorPane.rightAnchor="56.0" AnchorPane.topAnchor="20.0" />
+                  <AnchorPane layoutX="659.0" layoutY="58.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="96.0" prefWidth="180.0" styleClass="pista" stylesheets="@../resources/selectorpistas.css">
+                     <children>
+                        <HBox fx:id="pista5" layoutX="3.0" layoutY="4.0" onMousePressed="#mostrarNumeroDePista" prefHeight="89.0" prefWidth="173.0" styleClass="pista_de_tenis">
+                           <children>
+                              <Rectangle fx:id="rec5" arcHeight="5.0" arcWidth="5.0" fill="#f5ca1c" height="87.0" stroke="BLACK" strokeType="INSIDE" styleClass="seleccionado" width="173.0" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <Rectangle fill="WHITE" height="12.0" layoutX="75.0" layoutY="69.0" stroke="BLACK" strokeType="INSIDE" width="29.0" />
+                  <AnchorPane layoutX="637.0" layoutY="238.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="200.0" styleClass="pista" stylesheets="@../resources/selectorpistas.css">
+                     <children>
+                        <HBox fx:id="pista6" layoutX="5.0" layoutY="4.0" onMousePressed="#mostrarNumeroDePista" prefHeight="95.0" prefWidth="191.0" styleClass="pista_de_tenis">
+                           <children>
+                              <Rectangle fx:id="rec6" arcHeight="5.0" arcWidth="5.0" fill="#f5ca1c" height="95.0" stroke="BLACK" strokeType="INSIDE" styleClass="seleccionado" width="190.0" />
+                           </children></HBox>
+                     </children>
+                  </AnchorPane>
+                  <Circle fill="DODGERBLUE" layoutX="313.0" layoutY="253.0" radius="76.0" stroke="#bfa086" strokeType="INSIDE" strokeWidth="5.0" />
+                  <Circle fill="#bfa086" layoutX="313.0" layoutY="253.0" radius="24.0" stroke="#a18874" strokeType="INSIDE" strokeWidth="4.0" />
+                  <Polyline fill="WHITE" layoutX="140.0" layoutY="114.0" points="-50.0, -40.0, -5.415185928344727, -56.102256774902344, -6.505435943603516, -23.001598358154297, -50.0, -40.0" rotate="177.0" scaleX="0.5" scaleY="0.9" strokeType="INSIDE" />
+                  <Label layoutX="80.0" layoutY="89.0" prefHeight="34.0" prefWidth="62.0" text="ENTRADA PRINCIPAL" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="114.0" layoutY="150.0" prefHeight="13.0" prefWidth="62.0" text="PISTA 1" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="330.0" layoutY="139.0" prefHeight="13.0" prefWidth="62.0" text="PISTA 2" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="557.0" layoutY="37.0" prefHeight="13.0" prefWidth="62.0" text="PISTA 3" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="559.0" layoutY="227.0" prefHeight="13.0" prefWidth="62.0" text="PISTA 4" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="793.0" layoutY="41.0" prefHeight="13.0" prefWidth="62.0" text="PISTA 5" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="790.0" layoutY="228.0" prefHeight="13.0" prefWidth="62.0" text="PISTA 6" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="11.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="409.0" layoutY="238.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="200.0" styleClass="pista" stylesheets="@../resources/selectorpistas.css">
+                     <children>
+                        <HBox fx:id="pista4" layoutX="3.0" layoutY="4.0" onMousePressed="#mostrarNumeroDePista" prefHeight="95.0" prefWidth="193.0" styleClass="pista_de_tenis" stylesheets="@../resources/selectorpistas.css">
+                           <children>
+                              <Rectangle fx:id="rec4" arcHeight="5.0" arcWidth="5.0" fill="#f5ca1c" height="93.0" stroke="BLACK" strokeType="INSIDE" styleClass="seleccionado" width="191.0" />
+                           </children></HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="405.0" layoutY="55.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="200.0" styleClass="pista" stylesheets="@../resources/selectorpistas.css">
+                     <children>
+                        <HBox fx:id="pista3" layoutX="6.0" layoutY="4.0" onMousePressed="#mostrarNumeroDePista" prefHeight="95.0" prefWidth="190.0" styleClass="pista_de_tenis" stylesheets="@../resources/selectorpistas.css" />
+                        <Rectangle fx:id="rec3" arcHeight="5.0" arcWidth="5.0" fill="#f5ca1c" height="94.0" layoutX="6.0" layoutY="4.0" onMousePressed="#mostrarNumeroDePistaAUX" stroke="BLACK" strokeType="INSIDE" styleClass="seleccionado" width="189.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="176.0" layoutY="38.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="103.0" prefWidth="200.0" styleClass="pista" stylesheets="@../resources/selectorpistas.css">
+                     <children>
+                        <HBox fx:id="pista2" layoutX="4.0" layoutY="4.0" onMousePressed="#mostrarNumeroDePista" prefHeight="95.0" prefWidth="192.0" styleClass="pista_de_tenis" stylesheets="@../resources/selectorpistas.css">
+                           <children>
+                              <Rectangle fx:id="rec2" arcHeight="5.0" arcWidth="5.0" fill="#f5ca1c" height="93.0" stroke="BLACK" strokeType="INSIDE" styleClass="seleccionado" width="190.0" />
+                           </children></HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="64.0" layoutY="203.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="115.0" prefWidth="199.0" rotate="90.0" styleClass="pista" stylesheets="@../resources/selectorpistas.css">
+                     <children>
+                        <HBox fx:id="pista1" layoutX="5.0" layoutY="4.0" onMousePressed="#mostrarNumeroDePista" prefHeight="107.0" prefWidth="191.0" style="-fx-border-color: black;" styleClass="pista_de_tenis" stylesheets="@../resources/selectorpistas.css">
+                           <children>
+                              <Rectangle fx:id="rec1" arcHeight="5.0" arcWidth="5.0" fill="#f5ca1c" height="105.0" stroke="BLACK" strokeType="INSIDE" styleClass="seleccionado" width="191.0" />
+                           </children></HBox>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="284.0" layoutY="319.0" prefHeight="34.0" prefWidth="225.0" text="Fuente Hanói" textFill="WHITE" textOverrun="CLIP" wrapText="true">
+                     <font>
+                        <Font name="System Bold Italic" size="10.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#aaabab" height="27.0" layoutX="416.0" layoutY="180.0" stroke="BLACK" strokeType="INSIDE" width="441.0" />
+                  <Circle fill="#53d35a" layoutX="461.0" layoutY="194.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#53d35a" layoutX="549.0" layoutY="194.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#53d35a" layoutX="637.0" layoutY="194.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#53d35a" layoutX="729.0" layoutY="194.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+                  <Circle fill="#53d35a" layoutX="810.0" layoutY="194.0" radius="29.0" stroke="BLACK" strokeType="INSIDE" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </center>
+   <top>
+      <AnchorPane prefHeight="79.0" prefWidth="967.0" styleClass="mainBar" stylesheets="@../resources/selectorpistas.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="81.0" fitWidth="168.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="604.0" layoutY="25.0" styleClass="txtField" stylesheets="@../resources/selectorpistas.css" text="SELECCIONA UNA PISTA" />
+         </children></AnchorPane>
+   </top>
+</BorderPane>

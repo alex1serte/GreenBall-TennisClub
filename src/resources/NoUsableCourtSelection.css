@@ -1,0 +1,52 @@
+.botonCancelar {
+  -fx-background-color: white;
+  -fx-background-radius: 50;
+  -fx-border-color: linear-gradient(to right, #FF0000, #8B0000);
+  -fx-border-radius: 50;
+  -fx-border-width: 2px;
+  -fx-font-size: 12px;
+  -fx-font-weight: bold;
+}
+.botonCancelar:hover {
+  -fx-background-color: linear-gradient(to bottom right, #B22222, #8B0000);
+  -fx-text-fill: white;
+}
+
+.root{
+    -fx-backgroud-color: white;
+}
+.mainBar {
+  -fx-background-color: linear-gradient(to right, #0F7520, #006400);
+}
+
+.selectorOutside{
+    -fx-border-color:red;
+}
+
+.pista:hover{
+    -fx-background-color: yellow;
+
+}
+
+.pista_de_tenis {
+    -fx-background-image: url("pista_de_tenis.png");
+    -fx-background-size: cover;
+    -fx-background-position: top left;
+    -fx-background-repeat: no-repeat;
+    -fx-border-color: black;
+}
+
+.txtField{
+    -fx-text-fill:white;
+      -fx-font-size: 30px;
+  -fx-font-weight: bold;
+}
+
+.seleccionado{
+    -fx-background-color: red;
+    -fx-opacity : 0;
+}
+.seleccionado:hover{
+
+    -fx-opacity: 0.50;
+}

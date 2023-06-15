@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="900.0" styleClass="contenedor" stylesheets="@../resources/Usuario.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.PantallaUsuarioController">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="901.0" styleClass="mainBar" BorderPane.alignment="CENTER">
+         <children>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="2000.0" prefWidth="2000.0">
+               <children>
+                  <Button fx:id="inicio" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="43.0" prefWidth="100.0" styleClass="botonReserva" textAlignment="CENTER">
+                     <cursor>
+                        <Cursor fx:constant="DISAPPEAR" />
+                     </cursor>
+                     <graphic>
+                        <ImageView fitHeight="90.0" fitWidth="168.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../resources/logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="2000.0" prefWidth="2000.0">
+               <children>
+                  <MenuBar maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="100.0">
+                    <menus>
+                      <Menu>
+                        <items>
+                              <Menu mnemonicParsing="false" text="Editar perfil">
+                                <items>
+                                  <MenuItem fx:id="editarButton" mnemonicParsing="false" onAction="#profileEditing" text="Editar datos personales">
+                                       <graphic>
+                                          <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" translateY="-2.0">
+                                             <image>
+                                                <Image url="@../resources/manage_accounts_FILL0_wght600_GRAD200_opsz48.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </MenuItem>
+                                <MenuItem fx:id="passwordChange" mnemonicParsing="false" onAction="#changePassword" text="Cambiar contraseña">
+                                       <graphic>
+                                          <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" translateY="-4.0">
+                                             <image>
+                                                <Image url="@../resources/key_FILL0_wght600_GRAD200_opsz48.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                    </MenuItem>
+                                </items>
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" translateY="-4.0">
+                                       <image>
+                                          <Image url="@../resources/edit_square_FILL0_wght600_GRAD200_opsz48.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Menu>
+                              <MenuItem fx:id="cerrarSesion" mnemonicParsing="false" onAction="#volverAtras" text="Cerrar sesión">
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" translateY="-2.0">
+                                       <image>
+                                          <Image url="@../resources/logout_FILL0_wght600_GRAD200_opsz48.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </MenuItem>
+                        </items>
+                           <graphic>
+                              <ImageView fx:id="imageLittle" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/user_ico.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                      </Menu>
+                    </menus>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="menu-item" />
+                        <String fx:value="cosa" />
+                     </styleClass>
+                  </MenuBar>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="34.0" prefWidth="900.0" styleClass="mainBar" BorderPane.alignment="CENTER">
+         <children>
+            <Label text=" GreenBall - Tennis Club // Alejandro Iserte, Jeroni Altur, Jordi Puig" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="2000.0" prefWidth="2000.0" stylesheets="@../resources/Usuario.css">
+               <children>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="433.0" prefWidth="272.0" styleClass="rounded-vbox" stylesheets="@../resources/Usuario.css">
+                     <children>
+                        <GridPane stylesheets="@../resources/Usuario.css">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="338.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="358.0" minHeight="10.0" prefHeight="258.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="225.0" minHeight="10.0" prefHeight="134.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ListView fx:id="listView" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="284.0" prefWidth="235.0" styleClass="bordesdepantallaredondos" stylesheets="@../resources/Usuario.css" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
+                              <Label prefHeight="53.0" prefWidth="247.0" styleClass="plainText2" stylesheets="@../resources/Usuario.css" text="Para más información accede a la sección Mis Reservas" textAlignment="CENTER" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                 <GridPane.margin>
+                                    <Insets top="11.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fx:id="refreshButton" fitHeight="31.0" fitWidth="26.0" onMouseClicked="#recargarPagina" pickOnBounds="true" preserveRatio="true" />
+                                    <Label styleClass="plainText" stylesheets="@../resources/Usuario.css" text="Tus próximas reservas" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="2000.0" prefWidth="2000.0">
+               <children>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="240.0" prefWidth="272.0" styleClass="rounded-vbox" stylesheets="@../resources/Usuario.css" VBox.vgrow="ALWAYS">
+                     <children>
+                        <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="470.0" prefWidth="340.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="158.0" minHeight="10.0" prefHeight="86.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="148.0" minHeight="0.0" prefHeight="63.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="297.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="pistas" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#mostrarPistas" prefHeight="43.0" prefWidth="176.0" styleClass="botonAceptar" text="Reservar una pista" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                                 <cursor>
+                                    <Cursor fx:constant="DISAPPEAR" />
+                                 </cursor>
+                                 <GridPane.margin>
+                                    <Insets bottom="12.0" top="-1.0" />
+                                 </GridPane.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../resources/edit_calendar_FILL0_wght600_GRAD200_opsz48.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Button fx:id="reservas" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#mostrarRecursos" prefHeight="43.0" prefWidth="181.0" styleClass="botonAceptar" text="Mis Reservas" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                                 <cursor>
+                                    <Cursor fx:constant="DISAPPEAR" />
+                                 </cursor>
+                                 <GridPane.margin>
+                                    <Insets top="13.0" />
+                                 </GridPane.margin>
+                                 <graphic>
+                                    <ImageView fitHeight="28.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true" translateX="16.0">
+                                       <image>
+                                          <Image url="@../resources/pending_actions_FILL0_wght600_GRAD200_opsz48.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="256.0" styleClass="plainText" stylesheets="@../resources/Usuario.css" text="ACCIONES DISPONIBLES" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="2000.0" prefWidth="2000.0" stylesheets="@../resources/Usuario.css">
+               <children>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="433.0" prefWidth="272.0" styleClass="rounded-vbox" stylesheets="@../resources/Usuario.css">
+                     <children>
+                        <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="443.0" prefWidth="290.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints maxHeight="149.0" minHeight="0.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="382.0" minHeight="10.0" prefHeight="96.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="294.0" minHeight="10.0" prefHeight="294.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label styleClass="plainText" stylesheets="@../resources/Usuario.css" text="Tu sesión" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="BOTTOM" GridPane.vgrow="ALWAYS">
+                                 <GridPane.margin>
+                                    <Insets bottom="-8.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <VBox maxHeight="-Infinity" maxWidth="-Infinity" styleClass="bordesdepantallaredondos" stylesheets="@../resources/Usuario.css" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                                 <children>
+                                    <ImageView fx:id="fotoField" fitHeight="95.0" fitWidth="121.0" pickOnBounds="true" preserveRatio="true">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </ImageView>
+                                 </children>
+                                 <GridPane.margin>
+                                    <Insets top="25.0" />
+                                 </GridPane.margin>
+                              </VBox>
+                              <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="131.0" prefWidth="245.0" styleClass="plainText" stylesheets="@../resources/Usuario.css" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="119.0" minWidth="10.0" prefWidth="89.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.0" minWidth="10.0" prefWidth="159.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="67.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="22.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="107.0" minHeight="3.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label prefHeight="25.0" prefWidth="85.0" styleClass="plainText" stylesheets="@../resources/Usuario.css" text="Nombre: " GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM" />
+                                    <Label prefHeight="25.0" prefWidth="84.0" styleClass="plainText" stylesheets="@../resources/Usuario.css" text="Apellidos: " textAlignment="JUSTIFY" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                                    <Label styleClass="plainText" stylesheets="@../resources/Usuario.css" text="Nickname: " textAlignment="JUSTIFY" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+                                    <Label prefHeight="25.0" prefWidth="88.0" styleClass="plainText" stylesheets="@../resources/Usuario.css" text="Teléfono: " GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+                                    <Label fx:id="nombreField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="152.0" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
+                                       <GridPane.margin>
+                                          <Insets left="4.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="surnameField" prefHeight="25.0" prefWidth="147.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label fx:id="nicknameField" prefHeight="25.0" prefWidth="154.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label fx:id="phoneField" prefHeight="25.0" prefWidth="141.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                 </children>
+                                 <GridPane.margin>
+                                    <Insets left="15.0" top="14.0" />
+                                 </GridPane.margin>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

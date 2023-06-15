@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27-mar-2020, 16:33:06
+    Author     : DSIC_jsoler
+*/
+
+.time-slot {
+    -fx-background-color: linear-gradient(to right, #07ab07, #006400),white ;
+    -fx-background-insets: 0, 1 1 1 1 ;
+    -fx-cursor: hand;
+    -fx-border-radius: 5;
+}
+
+.time-slot-libre{
+    -fx-background-color: #006400,linear-gradient(to right, #07ab07, #006400);
+    -fx-background-insets: 0, 1 1 1 0 ;
+    -fx-cursor: hand;
+
+}
+
+.time-slot-reservado{
+    -fx-background-color: linear-gradient(to right, #07ab07, #006400),#006400;
+    -fx-background-insets: 0, 1 1 1 0 ;
+    -fx-cursor: hand;
+
+}
+
+.time-slot:selected {
+    -fx-background-color:#006400 ;
+}
+
+.date-picker > .text-field {
+    -fx-text-fill: red;
+}
+.plane_text{
+    -fx-font: bold 8pt "System";
+    -fx-text-fill: black;
+}
+.plainText{
+    -fx-font: bold italic 14pt "System";
+    -fx-text-fill: #006400;
+}

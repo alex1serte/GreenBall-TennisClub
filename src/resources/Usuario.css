@@ -1,0 +1,157 @@
+/*
+    @author Alejandro Iserte Fabuel, Jordi Pérez Puig, Jeroni Altur Frasquet
+*/
+
+.mainBar {
+  -fx-background-color: linear-gradient(to right, #0F7520, #006400);
+}
+.botonGrande {
+  -fx-background-color: white;
+  -fx-background-radius: 45;
+  -fx-border-color: linear-gradient(to right, #00FF00, #006400);
+  -fx-border-radius: 50;
+  -fx-border-width: 2px;
+  -fx-font-size: 26px;
+  -fx-font-weight: bold;
+}
+.botonGrande:hover {
+  -fx-background-color: linear-gradient(to bottom right, #0F7520, #006400);
+  -fx-text-fill: white;
+}
+.botonReserva {
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+  -fx-text-fill: white;
+  -fx-font-size: 20px;
+  -fx-font-weight: normal;
+  -fx-underline: false;
+  -fx-cursor: hand;
+  -fx-transition: -fx-underline 0.2s;
+  -fx-font-weight: bold;
+}
+.botonReserva:hover {
+  -fx-underline: true;
+}
+.big-text {
+  -fx-font-size: 30px;
+  -fx-font-weight: bold;
+  -fx-text-fill: white;
+    -fx-padding: 5px; /* Espacio interno del texto */
+    -fx-stroke:#0F7520
+}
+.button-redondo {
+  -fx-background-radius: 50%;
+  -fx-background-color: radial-gradient(radius 100%, red, blue);
+  -fx-border-radius: 50%;
+  -fx-border-color: black;
+  -fx-border-width: 2px;
+  -fx-min-width: 100px;
+  -fx-min-height: 100px;
+  -fx-max-width: 100px;
+  -fx-max-height: 100px;
+}
+.custom-button {
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 10;
+    -fx-padding: 5 10;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.custom-button:hover {
+    -fx-underline: true;
+    -fx-background-color: white;
+    -fx-text-fill: green;
+    -fx-border-radius: 10;
+}
+.contenedor {
+    -fx-background-image: url("1555790204_487381_1555791744_noticia_normal_recorte1.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: top left;
+    -fx-background-repeat: no-repeat;
+}
+
+.menu-bar .menu-item {
+  -fx-text-fill: black;
+  -fx-font-size: 18;
+   -fx-background-color: transparent;
+  -fx-border-color: transparent;
+  -fx-text-fill: white;
+  -fx-font-size: 20px;
+  -fx-font-weight: normal;
+  -fx-underline: false;
+  -fx-cursor: hand;
+  -fx-transition: -fx-underline 0.2s;
+  -fx-font-weight: bold;
+}
+
+.menu-bar .menu-item:hover,
+.menu-bar .menu-item:armed,
+.menu-bar .menu-item:focused{
+  -fx-background-color: #006400;
+  -fx-text-fill: #fff;
+    -fx-background-radius: 10px;
+}
+
+.cosa:hover,
+.cosa:armed,
+.cosa:focused{
+    -fx-background-color: transparent;
+}
+.botonReserva:selected{
+    -fx-background-color: #006400;
+}
+.plainText{
+    -fx-font: bold italic 12pt "System";
+    -fx-text-fill: #006400;
+}
+.plainText2{
+    -fx-font: italic 10pt "System";
+    -fx-text-fill: #006400;
+}
+.plainText3{
+    -fx-font: bold italic 8pt "System";
+    -fx-text-fill: #006400;
+}
+.list-view .list-cell:selected {
+    -fx-background-color: darkgreen;
+    -fx-text-fill: white;
+     -fx-border-color: darkgreen;
+}
+.botonAceptar{
+    -fx-background-color: white;
+    -fx-background-radius: 50;
+    -fx-border-color: linear-gradient(to right, #00FF00, #006400);
+    -fx-border-radius: 50;
+    -fx-border-width: 2px;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+.botonAceptar:hover {
+    -fx-background-color: linear-gradient(to bottom right, #0F7520, #006400);
+    -fx-text-fill: white;
+}
+
+.bordes_de_pantalla{
+    -fx-border-color: #006400;
+}
+
+.bordesdepantallaredondos{
+    -fx-border-color: #006400;
+    -fx-border-radius:5;
+}
+
+.contenedor {
+    -fx-background-image: url("mosaico2.png");
+    -fx-background-size: cover;
+    -fx-background-position: top left;
+    -fx-background-repeat: no-repeat;
+}
+.rounded-vbox {
+    -fx-background-radius: 30px;
+    -fx-background-color: white;
+    -fx-border-color: #d9e8d9;
+    -fx-border-width:3px;
+    -fx-border-radius: 30px;
+}

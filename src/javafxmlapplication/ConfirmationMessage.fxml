@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="186.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.ConfirmationMessageController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="598.0" styleClass="root" stylesheets="@../resources/Confirmation.css">
+         <center>
+            <GridPane BorderPane.alignment="CENTER_LEFT">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="91.59998168945313" minHeight="10.0" prefHeight="50.00000610351563" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="150.79999389648438" minHeight="10.0" prefHeight="150.79999389648438" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="96.9999755859375" minHeight="10.0" prefHeight="93.79999389648438" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="70.60001220703126" minHeight="10.0" prefHeight="57.00000610351563" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane GridPane.rowIndex="1">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label alignment="TOP_CENTER" prefHeight="98.0" prefWidth="598.0" styleClass="subtitle" stylesheets="@../resources/Confirmation.css" text="Su usuario ha sido registrado correctamente. Inicie sesión.">
+                                 <GridPane.margin>
+                                    <Insets bottom="50.0" left="13.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Button fx:id="botonAceptar" alignment="CENTER" mnemonicParsing="false" onMousePressed="#cerrarOperacion" styleClass="botonAceptar" stylesheets="@../resources/Confirmation.css" text="Aceptar" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="27.0" left="269.0" />
+                                 </GridPane.margin>
+                              </Button>
+                           </children>
+                        </GridPane>
+                        <Label alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" prefHeight="92.0" prefWidth="598.0" styleClass="success-text-big" stylesheets="@../resources/Confirmation.css" text="¡FELICIDADES!">
+                           <GridPane.margin>
+                              <Insets bottom="29.0" top="47.0" />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="mainBar" stylesheets="@../resources/Confirmation.css">
+                     <children>
+                        <ImageView fitHeight="55.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

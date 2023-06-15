@@ -1,0 +1,19 @@
+.mainBar {
+    -fx-background-color: linear-gradient(to right, #0F7520, #006400);
+}
+.root{
+    -fx-backgroud-color: white;
+}
+.botonAceptar{
+    -fx-background-color: white;
+    -fx-background-radius: 50;
+    -fx-border-color: linear-gradient(to right, #00FF00, #006400);
+    -fx-border-radius: 50;
+    -fx-border-width: 2px;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+.botonAceptar:hover {
+    -fx-background-color: linear-gradient(to bottom right, #0F7520, #006400);
+    -fx-text-fill: white;
+}

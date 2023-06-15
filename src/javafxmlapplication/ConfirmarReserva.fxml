@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="197.0" prefWidth="823.0" styleClass="root" stylesheets="@../resources/confirmarreserva.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.ConfirmarReservaController">
+   <top>
+      <AnchorPane prefHeight="0.0" prefWidth="606.0" styleClass="mainBar" stylesheets="@../resources/confirmarreserva.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="58.0" fitWidth="141.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <Label fx:id="textMessage" alignment="CENTER" prefHeight="25.0" prefWidth="962.0" styleClass="texto" stylesheets="@../resources/confirmarreserva.css" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <ButtonBar maxWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="291.0" BorderPane.alignment="CENTER">
+         <buttons>
+            <Button fx:id="acceptButton" mnemonicParsing="false" onAction="#confirmarReserva" prefHeight="25.0" prefWidth="308.0" styleClass="botonAceptar" stylesheets="@../resources/confirmarreserva.css" text="Confirmar reserva" />
+            <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cerrarVentana" styleClass="botonCancelar" stylesheets="@../resources/confirmarreserva.css" text="Cancelar" />
+         </buttons>
+      </ButtonBar>
+   </bottom>
+</BorderPane>

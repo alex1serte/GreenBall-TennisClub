@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="911.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.MisReservasController">
+   <top>
+      <AnchorPane prefHeight="86.0" prefWidth="911.0" styleClass="mainBar" stylesheets="@../resources/misreservas.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="69.0" fitWidth="144.0" layoutX="14.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="reserveButton" layoutX="649.0" layoutY="18.0" mnemonicParsing="false" onAction="#botonCrearUnaReserva" prefHeight="49.0" prefWidth="231.0" styleClass="custom-button" stylesheets="@../resources/misreservas.css" text="Reservar una pista" AnchorPane.rightAnchor="31.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="339.0" prefWidth="911.0" styleClass="root" stylesheets="@../resources/misreservas.css" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane maxHeight="-Infinity" prefHeight="357.0" prefWidth="785.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="205.0" minHeight="10.0" prefHeight="174.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="114.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="182.0" minHeight="10.0" prefHeight="132.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <HBox maxWidth="-Infinity" prefHeight="32.0" prefWidth="785.0" GridPane.rowIndex="1">
+                     <children>
+                        <HBox maxHeight="-Infinity">
+                           <HBox.margin>
+                              <Insets top="2.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label prefHeight="29.0" prefWidth="898.0" styleClass="plainText" stylesheets="@../resources/misreservas.css" text="Información de la reserva" textFill="DARKGREEN">
+                                 <padding>
+                                    <Insets left="6.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="System Bold Italic" size="12.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets top="8.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <ButtonBar maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="694.0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                    <buttons>
+                        <Button fx:id="cancelButton" mnemonicParsing="false" prefHeight="28.0" styleClass="botonCancelar" stylesheets="@../resources/misreservas.css" text="Eliminar reserva">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/delete_FILL0_wght600_GRAD200_opsz48.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                      <Button fx:id="locationButton" alignment="CENTER" mnemonicParsing="false" onAction="#cargarLocalizacion" prefHeight="25.0" prefWidth="611.0" styleClass="botonLocation" stylesheets="@../resources/misreservas.css" text="Ver localización">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <graphic>
+                              <ImageView id="imagen" fitHeight="26.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" styleClass="imagen">
+                                 <image>
+                                    <Image url="@../resources/loc_ico.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                    </buttons>
+                  </ButtonBar>
+                  <GridPane prefHeight="124.0" prefWidth="832.0" GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="415.0" minWidth="10.0" prefWidth="297.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="10.0" prefWidth="205.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="10.0" prefWidth="326.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="59.0" minHeight="3.0" prefHeight="39.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label styleClass="plainText" stylesheets="@../resources/misreservas.css" text="Fecha de la reserva: " GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets bottom="7.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="37.0" prefWidth="150.0" styleClass="plainText" stylesheets="@../resources/misreservas.css" text="Hora de la reserva: " GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                        <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="145.0" styleClass="plainText" stylesheets="@../resources/misreservas.css" text="Pista: " GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets top="6.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="reservaPayed" prefHeight="27.0" prefWidth="279.0" styleClass="plainText" stylesheets="@../resources/misreservas.css" text="Estado de pago: " GridPane.columnIndex="2" GridPane.valignment="TOP">
+                           <GridPane.margin>
+                              <Insets bottom="31.0" left="4.0" top="-3.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="payHeader" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="49.0" prefWidth="258.0" styleClass="plainText2" stylesheets="@../resources/misreservas.css" text="Reserva no abonada, ¿desea pagar ahora?" wrapText="true" GridPane.columnIndex="2" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets bottom="-28.0" left="4.0" top="69.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="4.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="17.0" prefWidth="225.0" styleClass="plainText" stylesheets="@../resources/misreservas.css" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets bottom="4.0" left="4.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="reserveDate" styleClass="plainText2" stylesheets="@../resources/misreservas.css" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets top="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="reserveHour" styleClass="plainText2" stylesheets="@../resources/misreservas.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets top="2.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="reserveCourt" styleClass="plainText2" stylesheets="@../resources/misreservas.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets top="-3.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Button fx:id="payButton" mnemonicParsing="false" onAction="#pagarAhora" styleClass="botonAceptar" stylesheets="@../resources/misreservas.css" text="Pagar ahora" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                           <GridPane.margin>
+                              <Insets bottom="-20.0" right="100.0" />
+                           </GridPane.margin>
+                        </Button>
+                     </children>
+                  </GridPane>
+                  <ListView fx:id="listView" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="152.0" prefWidth="785.0" GridPane.valignment="BOTTOM" />
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <ButtonBar maxWidth="-Infinity" prefHeight="42.0" prefWidth="887.0" style="-fx-background-color: white;" styleClass="root" stylesheets="@../resources/reservaconfirmada.css" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button fx:id="backButton" mnemonicParsing="false" onAction="#volverAtras" styleClass="botonCancelar" stylesheets="@../resources/confirmarreserva.css" text="Volver atrás" />
+        </buttons>
+      </ButtonBar>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,54 @@
+/*
+    @author Alejandro Iserte Fabuel, Jordi Pérez Puig, Jeroni Altur Frasquet
+*/
+.mainBar {
+  -fx-background-color: linear-gradient(to right, #0F7520, #006400);
+}
+.botonAceptar{
+  -fx-background-color: white;
+  -fx-background-radius: 50;
+  -fx-border-color: linear-gradient(to right, #00FF00, #006400);
+  -fx-border-radius: 50;
+  -fx-border-width: 2px;
+  -fx-font-size: 12px;
+  -fx-font-weight: bold;
+}
+.botonAceptar:hover {
+  -fx-background-color: linear-gradient(to bottom right, #0F7520, #006400);
+  -fx-text-fill: white;
+}
+.botonCancelar {
+  -fx-background-color: white;
+  -fx-background-radius: 50;
+  -fx-border-color: linear-gradient(to right, #FF0000, #8B0000);
+  -fx-border-radius: 50;
+  -fx-border-width: 2px;
+  -fx-font-size: 12px;
+  -fx-font-weight: bold;
+}
+.botonCancelar:hover {
+  -fx-background-color: linear-gradient(to bottom right, #B22222, #8B0000);
+  -fx-text-fill: white;
+}
+.root{
+    -fx-background-color:white;
+}
+.background{
+    -fx-background-color: white;
+}
+.botonRegister {
+  -fx-background-color: transparent;
+  -fx-text-fill: black;
+  -fx-border-color: transparent;
+  -fx-underline: true;
+  -fx-font-weight: bold;
+}
+.botonRegister:hover {
+  -fx-text-fill: red;
+}
+.textfieldUsuario{
+  -fx-border-color:#006400;
+  -fx-background-color: white;
+  -fx-border-radius: 10;
+}
+

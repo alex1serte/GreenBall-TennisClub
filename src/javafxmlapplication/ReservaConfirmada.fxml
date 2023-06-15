@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="244.0" prefWidth="677.0" styleClass="root" stylesheets="@../resources/reservaconfirmada.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.ReservaConfirmadaController">
+   <top>
+      <AnchorPane prefHeight="60.0" prefWidth="677.0" styleClass="mainBar" stylesheets="@../resources/reservaconfirmada.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="57.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <Label styleClass="texto" stylesheets="@../resources/reservaconfirmada.css" text="¡ Su reserva ha sido confirmada con éxito !" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="32.0" />
+         </BorderPane.margin>
+      </Label>
+   </center>
+   <bottom>
+      <Button fx:id="acceptButton" mnemonicParsing="false" onAction="#cerrarVentana" styleClass="botonAceptar" stylesheets="@../resources/reservaconfirmada.css" text="Aceptar" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="26.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>

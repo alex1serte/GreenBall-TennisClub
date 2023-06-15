@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="macro" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.EditarPerfilController">
+   <top>
+      <AnchorPane prefHeight="66.0" prefWidth="600.0" styleClass="mainBar" BorderPane.alignment="CENTER">
+         <stylesheets>
+            <URL value="@../resources/register.css" />
+            <URL value="@../resources/login.css" />
+         </stylesheets>
+         <children>
+            <ImageView fitHeight="73.0" fitWidth="155.0" layoutX="14.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/logo.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER_RIGHT" layoutX="282.0" layoutY="14.0" prefHeight="59.0" prefWidth="289.0" styleClass="txtField" stylesheets="@../resources/register.css" text="EDITAR PERFIL" textFill="RED" />
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <ButtonBar prefHeight="38.0" prefWidth="591.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button fx:id="editButton" mnemonicParsing="false" onMousePressed="#editar" styleClass="botonAceptar" stylesheets="@../resources/register.css" text="Editar perfil" />
+            <Button fx:id="cancelRegisterButton" mnemonicParsing="false" onAction="#cerrarOperacionRegistro" styleClass="botonCancelar" stylesheets="@../resources/register.css" text="Cancelar" />
+        </buttons>
+         <BorderPane.margin>
+            <Insets right="9.0" />
+         </BorderPane.margin>
+      </ButtonBar>
+   </bottom>
+   <right>
+      <FlowPane alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="270.0" prefWidth="228.0" BorderPane.alignment="BOTTOM_CENTER">
+         <children>
+            <GridPane alignment="TOP_RIGHT" prefHeight="253.0" prefWidth="241.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="118.0" prefWidth="241.0">
+                     <children>
+                        <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="135.0" styleClass="boxConBorde" stylesheets="@../resources/register.css">
+                           <VBox.margin>
+                              <Insets top="4.0" />
+                           </VBox.margin>
+                           <children>
+                              <ImageView fx:id="imageContainer" fitHeight="167.0" fitWidth="133.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../resources/fotos/default.png" />
+                                 </image></ImageView>
+                           </children></VBox>
+                     </children>
+                     <GridPane.margin>
+                        <Insets top="61.0" />
+                     </GridPane.margin>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="241.0" GridPane.rowIndex="1">
+                     <children>
+                        <Button fx:id="fotoSeleccion" mnemonicParsing="false" onAction="#mostrarFotos" styleClass="botonSeleccionarFoto" stylesheets="@../resources/register.css" text="Seleccionar foto de perfil">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                     <GridPane.margin>
+                        <Insets bottom="-27.0" />
+                     </GridPane.margin>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </FlowPane>
+   </right>
+   <center>
+      <GridPane prefHeight="317.0" prefWidth="372.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="282.0" minWidth="10.0" prefWidth="225.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="10.0" prefWidth="221.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="40.8000244140625" minHeight="6.600013160705565" prefHeight="28.200018310546874" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="61.599986839294424" minHeight="10.0" prefHeight="32.800024414062506" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="47.99999771118165" minHeight="10.0" prefHeight="27.800006103515628" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.39999999999999" minHeight="10.0" prefHeight="30.199993896484372" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="52.80000610351564" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.79999389648438" minHeight="0.0" prefHeight="2.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="170.0" text="Nombre  " GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="170.0" text="Apellidos " GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="169.0" text="Teléfono " GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="170.0" text="Nickname " GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="171.0" text="Número de cuenta " GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER_RIGHT" prefHeight="20.0" prefWidth="171.0" text="SVC" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="222.0" styleClass="textfieldUsuario" stylesheets="@../resources/editarperfil.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="surnameContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="222.0" styleClass="textfieldUsuario" stylesheets="@../resources/editarperfil.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="phoneContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="76.0" styleClass="textfieldUsuario" stylesheets="@../resources/editarperfil.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="nicknameContainer" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="222.0" styleClass="textfieldUsuario" stylesheets="@../resources/editarperfil.css" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="creditCardNumber" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="125.0" styleClass="textfieldUsuario" stylesheets="@../resources/editarperfil.css" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="cvvContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="25.0" prefWidth="37.0" styleClass="textfieldUsuario" stylesheets="@../resources/editarperfil.css" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="userRepeated" prefHeight="47.0" prefWidth="216.0" text="ATENCIÓN: Nombre de usuario ya existente" textFill="RED" visible="false" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </center>
+</BorderPane>

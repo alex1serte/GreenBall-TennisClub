@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="pane" prefHeight="653.0" prefWidth="951.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.ReservasNoLoginController">
+   <center>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="541.0" prefWidth="951.0" spacing="36.0" stylesheets="@../resources/calendar-view.css" BorderPane.alignment="CENTER_LEFT">
+         <children>
+            <GridPane fx:id="grid" focusTraversable="true" gridLinesVisible="true" prefHeight="463.0" prefWidth="855.0" VBox.vgrow="SOMETIMES">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="92.0" minWidth="-Infinity" prefWidth="92.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="477.6666259765625" minWidth="10.0" prefWidth="132.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="477.6666259765625" minWidth="10.0" prefWidth="140.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="477.6666259765625" minWidth="10.0" prefWidth="113.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="477.6666259765625" minWidth="10.0" prefWidth="128.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="477.6666259765625" minWidth="10.0" prefWidth="119.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="477.6666259765625" minWidth="-Infinity" prefWidth="130.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="26.0" prefWidth="111.0" style="-fx-text-fill: #006400;" stylesheets="@../resources/calendar-view.css" text="PISTA 6" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font></Label>
+                  <Label style="-fx-text-fill: #006400;" text="9:00 - 10:00" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <GridPane.margin>
+                        <Insets right="4.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label style="-fx-text-fill: #006400;" text="10:00 - 11:00" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="4.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label style="-fx-text-fill: #006400;" text="11:00 - 12:00" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="4.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label style="-fx-text-fill: #006400;" text="12:00 - 13:00" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="4.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label style="-fx-text-fill: #006400;" text="13:00 - 14:00" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="4.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label style="-fx-text-fill: #006400;" text="14:00 - 15:00" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="4.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label style="-fx-text-fill: #006400;" text="15:00 - 16:00" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="4.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label style="-fx-text-fill: #006400;" text="16:00 - 17:00" GridPane.halignment="CENTER" GridPane.rowIndex="8" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="4.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label style="-fx-text-fill: #006400;" text="17:00 - 18:00" GridPane.halignment="CENTER" GridPane.rowIndex="9" GridPane.valignment="CENTER">
+                     <GridPane.margin>
+                        <Insets right="4.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label style="-fx-text-fill: #006400;" text="18:00 - 19:00" GridPane.halignment="CENTER" GridPane.rowIndex="10">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label style="-fx-text-fill: #006400;" text="19:00 - 20:00" GridPane.halignment="CENTER" GridPane.rowIndex="11">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label style="-fx-text-fill: #006400;" text="20:00 - 21:00" GridPane.halignment="CENTER" GridPane.rowIndex="12">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label style="-fx-text-fill: #006400;" text="21:00 - 22:00" GridPane.halignment="CENTER" GridPane.rowIndex="13">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="130.0" style="-fx-text-fill: #006400;" stylesheets="@../resources/calendar-view.css" text="PISTA 1" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="140.0" style="-fx-text-fill: #006400;" stylesheets="@../resources/calendar-view.css" text="PISTA 2" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="26.0" prefWidth="111.0" style="-fx-text-fill: #006400;" stylesheets="@../resources/calendar-view.css" text="PISTA 3" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="26.0" prefWidth="111.0" style="-fx-text-fill: #006400;" stylesheets="@../resources/calendar-view.css" text="PISTA 4" GridPane.columnIndex="4" GridPane.halignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="26.0" prefWidth="111.0" style="-fx-text-fill: #006400;" stylesheets="@../resources/calendar-view.css" text="PISTA 5" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="7.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <HBox fx:id="pista11" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                     <children>
+                        <Label fx:id="texto11" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" wrapText="true" HBox.hgrow="SOMETIMES" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista12" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="texto12" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista13" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <children>
+                        <Label fx:id="texto13" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista14" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <Label fx:id="texto14" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista15" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <children>
+                        <Label fx:id="texto15" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista16" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <children>
+                        <Label fx:id="texto16" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista17" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <children>
+                        <Label fx:id="texto17" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista18" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <children>
+                        <Label fx:id="texto18" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista19" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                     <children>
+                        <Label fx:id="texto19" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista110" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                     <children>
+                        <Label fx:id="texto110" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista112" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                     <children>
+                        <Label fx:id="texto112" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista113" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                     <children>
+                        <Label fx:id="texto113" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista111" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                     <children>
+                        <Label fx:id="texto111" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" wrapText="true" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista21" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="texto21" alignment="CENTER" prefHeight="30.0" prefWidth="147.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista22" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="texto22" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista23" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <children>
+                        <Label fx:id="texto23" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista24" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <children>
+                        <Label fx:id="texto24" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista25" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <children>
+                        <Label fx:id="texto25" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista26" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <children>
+                        <Label fx:id="texto26" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista27" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                     <children>
+                        <Label fx:id="texto27" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista28" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                     <children>
+                        <Label fx:id="texto28" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista29" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                     <children>
+                        <Label fx:id="texto29" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista210" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                     <children>
+                        <Label fx:id="texto210" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista211" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                     <children>
+                        <Label fx:id="texto211" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista212" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="12">
+                     <children>
+                        <Label fx:id="texto212" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista213" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="13">
+                     <children>
+                        <Label fx:id="texto213" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista31" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="texto31" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista32" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="texto32" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista33" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <children>
+                        <Label fx:id="texto33" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista34" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <children>
+                        <Label fx:id="texto34" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista35" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <children>
+                        <Label fx:id="texto35" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista36" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                     <children>
+                        <Label fx:id="texto36" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista37" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                     <children>
+                        <Label fx:id="texto37" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista38" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                     <children>
+                        <Label fx:id="texto38" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista39" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                     <children>
+                        <Label fx:id="texto39" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista310" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="10">
+                     <children>
+                        <Label fx:id="texto310" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista311" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="11">
+                     <children>
+                        <Label fx:id="texto311" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista312" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="12">
+                     <children>
+                        <Label fx:id="texto312" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista313" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="13">
+                     <children>
+                        <Label fx:id="texto313" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista41" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="texto41" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista42" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="texto42" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista43" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <children>
+                        <Label fx:id="texto43" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista44" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <children>
+                        <Label fx:id="texto44" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista45" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                     <children>
+                        <Label fx:id="texto45" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista46" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                     <children>
+                        <Label fx:id="texto46" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista47" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                     <children>
+                        <Label fx:id="texto47" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista48" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                     <children>
+                        <Label fx:id="texto48" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista49" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="9">
+                     <children>
+                        <Label fx:id="texto49" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista410" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="10">
+                     <children>
+                        <Label fx:id="texto410" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista411" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="11">
+                     <children>
+                        <Label fx:id="texto411" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista412" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="12">
+                     <children>
+                        <Label fx:id="texto412" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista413" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="13">
+                     <children>
+                        <Label fx:id="texto413" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista51" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="texto51" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista52" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="texto52" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista53" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <children>
+                        <Label fx:id="texto53" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista54" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                     <children>
+                        <Label fx:id="texto54" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista55" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                     <children>
+                        <Label fx:id="texto55" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista56" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                     <children>
+                        <Label fx:id="texto56" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista57" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                     <children>
+                        <Label fx:id="texto57" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista58" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                     <children>
+                        <Label fx:id="texto58" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista59" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="9">
+                     <children>
+                        <Label fx:id="texto59" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista510" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="10">
+                     <children>
+                        <Label fx:id="texto510" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista511" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="11">
+                     <children>
+                        <Label fx:id="texto511" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista512" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="12">
+                     <children>
+                        <Label fx:id="texto512" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista513" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="13">
+                     <children>
+                        <Label fx:id="texto513" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista61" prefHeight="30.0" prefWidth="160.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                     <children>
+                        <Label fx:id="texto61" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista62" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="texto62" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista63" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                     <children>
+                        <Label fx:id="texto63" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista64" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                     <children>
+                        <Label fx:id="texto64" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista65" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                     <children>
+                        <Label fx:id="texto65" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista66" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                     <children>
+                        <Label fx:id="texto66" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista67" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                     <children>
+                        <Label fx:id="texto67" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista68" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="8">
+                     <children>
+                        <Label fx:id="texto68" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista69" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="9">
+                     <children>
+                        <Label fx:id="texto69" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista610" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="10">
+                     <children>
+                        <Label fx:id="texto610" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista611" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="11">
+                     <children>
+                        <Label fx:id="texto611" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista612" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="12">
+                     <children>
+                        <Label fx:id="texto612" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+                  <HBox fx:id="pista613" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="13">
+                     <children>
+                        <Label fx:id="texto613" alignment="CENTER" prefHeight="35.0" prefWidth="163.0" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="-26.0" top="25.0" />
+               </VBox.margin>
+            </GridPane>
+            <Label fx:id="slotSelected" styleClass="plainText" stylesheets="@../resources/calendar-view.css" textFill="#6811f5" VBox.vgrow="NEVER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="59.0" top="-9.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="24.0" left="48.0" right="48.0" top="48.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets bottom="17.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+   <top>
+      <AnchorPane prefHeight="74.0" prefWidth="951.0" styleClass="mainBar" stylesheets="@../resources/creadorreserva.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="105.0" fitWidth="196.0" layoutX="-3.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <bottom>
+      <ButtonBar maxWidth="-Infinity" prefHeight="40.0" prefWidth="930.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button fx:id="backButton" mnemonicParsing="false" onAction="#cerrarVentana" styleClass="botonCancelar" stylesheets="@../resources/confirmarreserva.css" text="Volver atrás" />
+        </buttons>
+      </ButtonBar>
+   </bottom>
+</BorderPane>

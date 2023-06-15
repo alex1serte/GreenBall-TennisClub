@@ -1,0 +1,24 @@
+.mainBar {
+  -fx-background-color: linear-gradient(to right, #0F7520, #006400);
+}
+.txtField{
+    -fx-text-fill:white;
+      -fx-font-size: 30px;
+  -fx-font-weight: bold;
+}
+.textfieldUsuario{
+    -fx-prompt-text-fill:#006400;
+    -fx-border-color:#006400;
+  -fx-background-color: white;
+  -fx-border-radius: 10;
+}
+.botonRegister {
+  -fx-background-color: transparent;
+  -fx-text-fill: black;
+  -fx-border-color: transparent;
+  -fx-underline: true;
+  -fx-font-weight: bold;
+}
+.botonRegister:hover {
+  -fx-text-fill: red;
+}
